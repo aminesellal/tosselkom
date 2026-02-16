@@ -1,33 +1,49 @@
+# =========================
 # Dependencies
+# =========================
 node_modules/
 dist/
 build/
 .next/
 
-# Environment
+# =========================
+# Environment (NEVER commit secrets)
+# =========================
 .env
 .env.local
 .env.*.local
+# Note: .env.example files ARE committed (they contain no secrets)
 
-# IDE
+# =========================
+# IDE / Editor
+# =========================
 .vscode/
 .idea/
 *.swp
 *.swo
+*.code-workspace
 
-# Project specific ignores
+# =========================
+# Package locks (optional — remove if team wants lockfiles)
+# =========================
+# package-lock.json
+
+# =========================
+# Project-specific ignores
+# =========================
 tosselcom-mobile-app/
-"CDC_PRJP06_Boudi & Zouana.pdf"
-temp/
-tmp/
 
+# =========================
 # Logs
+# =========================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 logs/
 *.log
 
-# OS
+# =========================
+# OS files
+# =========================
 .DS_Store
 Thumbs.db

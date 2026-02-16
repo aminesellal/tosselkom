@@ -136,7 +136,7 @@ export const AuthChoice = () => {
                                 </label>
                             </div>
                             <div className="flex justify-end">
-                                <a className="text-xs font-medium text-neutral-500 hover:text-[#141414] hover:underline transition-colors" href="#">Mot de passe oublié ?</a>
+                                <Link className="text-xs font-medium text-neutral-500 hover:text-[#141414] hover:underline transition-colors" to="/forgot-password">Mot de passe oublié ?</Link>
                             </div>
                         </div>
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
@@ -13,6 +12,8 @@ import { RegisterChoice } from './pages/RegisterChoice'
 import { RegisterCourier } from './pages/RegisterCourier'
 import { RegisterSender } from './pages/RegisterSender'
 import { LoginCourier } from './pages/LoginCourier'
+import { ForgotPassword } from './pages/ForgotPassword'
+import { ResetPassword } from './pages/ResetPassword'
 
 // Courier Dashboard Pages
 import { CourierDashboard } from './pages/courier/CourierDashboard'
@@ -50,6 +51,8 @@ function App() {
                     <Route path="/auth" element={<AuthChoice />} />
                     <Route path="/login" element={<AuthChoice />} />
                     <Route path="/register" element={<RegisterChoice />} />
+                    <Route path="/forgot-password" element={<ForgotPassword />} />
+                    <Route path="/reset-password" element={<ResetPassword />} />
                     <Route path="/login/courier" element={<LoginCourier />} />
                     <Route path="/register/courier" element={<RegisterCourier />} />
                     <Route path="/register/sender" element={<RegisterSender />} />

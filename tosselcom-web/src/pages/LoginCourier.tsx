@@ -89,7 +89,7 @@ export const LoginCourier = () => {
                             <div className="space-y-1 text-left">
                                 <div className="flex justify-between items-center px-1">
                                     <label className="text-xs font-bold uppercase tracking-wider text-neutral-500" htmlFor="password">Mot de passe</label>
-                                    <a className="text-[11px] font-semibold text-neutral-400 hover:text-black transition-colors" href="#">Oublié ?</a>
+                                    <Link className="text-[11px] font-semibold text-neutral-400 hover:text-black transition-colors" to="/forgot-password">Oublié ?</Link>
                                 </div>
                                 <div className="relative">
                                     <input

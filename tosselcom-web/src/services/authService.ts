@@ -1,4 +1,4 @@
-import { signIn, signUp, signOut } from "../lib/auth-client";
+import { signIn, signUp, signOut, authClient } from "../lib/auth-client";
 import { UserRole } from "../types";
 
 export const authService = {
@@ -29,5 +29,25 @@ export const authService = {
     logout: async () => {
         await signOut();
         window.location.href = '/';
+    },
+
+    forgotPassword: async (email: string) => {
+        const { data, error } = await authClient.requestPasswordReset({
+            email,
+            redirectTo: "/reset-password",
+        });
+
+        if (error) throw new Error(error.message || "Erreur lors de l'envoi de l'email");
+        return data;
+    },
+
+    resetPassword: async (token: string, password: string) => {
+        const { data, error } = await authClient.resetPassword({
+            newPassword: password,
+            token
+        });
+
+        if (error) throw new Error(error.message || "Erreur lors de la réinitialisation");
+        return data;
     }
 };
