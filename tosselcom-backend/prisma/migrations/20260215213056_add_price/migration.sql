@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "order" ADD COLUMN     "prix" DOUBLE PRECISION NOT NULL DEFAULT 0.0;
