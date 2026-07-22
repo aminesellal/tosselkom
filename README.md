@@ -396,3 +396,10 @@ npm run preview  # Prévisualiser le build de production
 <p align="center">
   <strong>© 2026 TOSSELCOM Logistics</strong> — L'excellence au service de vos colis.
 </p>
+
+---
+
+## 👨‍💻 Auteur
+
+**Amine Sellal** — Développeur Full Stack
+
